@@ -28,7 +28,10 @@
     "krisobelil",
     "approvable",
     "noninteractive",
-    "hasura"
+    "hasura",
+    "VITE",
+    "OBPR",
+    "SATO"
   ],
   "flagWords": [],
   "ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"]
