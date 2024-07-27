@@ -1,0 +1,5 @@
+husky_directory_path=$(dirname -- "$0")
+repository_path=$(pwd)
+. "$repository_path/scripts/protect-default-branch.sh"
+
+npx lint-staged

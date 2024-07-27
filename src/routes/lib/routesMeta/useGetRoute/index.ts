@@ -1,0 +1,1 @@
+export { useGetRoute } from './useGetRoute';

@@ -1,0 +1,11 @@
+{
+  "project": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "!src/routes/lib/routerTyping",
+    "!src/orval/generated/**/*",
+    "!src/orval/orval.config.ts",
+    "!src/orval/useCustomClient.ts",
+    "!src/**/*.spec-d.ts"
+  ]
+}
