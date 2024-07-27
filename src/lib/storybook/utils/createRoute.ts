@@ -1,7 +1,7 @@
 import type {
   castRouterRoute,
   reactRouterParameters,
-} from 'storybook-addon-react-router-v6';
+} from 'storybook-addon-remix-react-router';
 import type { RouteConfig } from '@/routes';
 
 type PathParams<T extends keyof RouteConfig> = RouteConfig[T] extends {

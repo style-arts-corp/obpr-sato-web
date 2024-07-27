@@ -1,0 +1,33 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+#
+pre-push:
+  parallel: true
+  commands:
+    lint:
+      run: pnpm lint:cache
+    fmt:
+      run: pnpm fmt
+    typecheck:
+      run: pnpm typecheck
+    spellcheck:
+      run: pnpm spellcheck
+    find-deadcode:
+      run: pnpm find-deadcode
+    prevent-main:
+      run: pnpm prevent-main
+
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      run: pnpm exec prettier --write --ignore-unknown {staged_files}
+    prevent-main:
+      run: pnpm prevent-main
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint --edit "$1"

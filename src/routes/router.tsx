@@ -7,6 +7,7 @@ import { demoRouterPaths } from './routers';
 const PageLayout = lazy(
   async () => await import('@/components/atoms/PageLayout'),
 );
+const TopPage = lazy(async () => await import('@/pages/index'));
 
 // TODO: 後ほどそれぞれのfeatureごとに分割する
 export const routerPaths = [
@@ -16,7 +17,7 @@ export const routerPaths = [
     children: [
       {
         path: '',
-        element: <>トップページ</>,
+        element: <TopPage />,
       },
     ],
   },
