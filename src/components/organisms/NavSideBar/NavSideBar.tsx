@@ -1,8 +1,8 @@
+import { DemoNavList } from '@/components/organisms/NavSideBar/components/DemoNavList';
 import { Nav } from '@/components/organisms/NavSideBar/components/Nav';
-import { SystemSettingNavList } from '@/components/organisms/NavSideBar/components/SystemSettingNavList';
 
 export const NavSideBar: React.FC = () => (
   <Nav>
-    <SystemSettingNavList />
+    <DemoNavList />
   </Nav>
 );
