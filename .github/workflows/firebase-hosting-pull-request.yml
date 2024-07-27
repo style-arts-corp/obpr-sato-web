@@ -44,6 +44,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: pnpm build
+        env:
+          VITE_API_URL: ${{ vars.API_URL }}
+          VITE_X_HASURA_ADMIN_SECRET: ${{ secrets.X_HASURA_ADMIN_SECRET }}
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
