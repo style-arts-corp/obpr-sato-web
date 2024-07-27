@@ -4,6 +4,10 @@ import type { IRoutes } from '@/routes/lib/routerTyping';
 const PageLayout = lazy(
   async () => await import('@/components/atoms/PageLayout'),
 );
+const DemoTopPage = lazy(async () => await import('@/pages/demo'));
+const DemoCreatePage = lazy(async () => await import('@/pages/demo/create'));
+const DemoDetailPage = lazy(async () => await import('@/pages/demo/[id]'));
+const DemoEditPage = lazy(async () => await import('@/pages/demo/[id]/edit'));
 
 export const demoRouterPaths = [
   {
@@ -12,19 +16,19 @@ export const demoRouterPaths = [
     children: [
       {
         path: '',
-        element: <>top</>,
+        element: <DemoTopPage />,
       },
       {
         path: 'create',
-        element: <>create</>,
+        element: <DemoCreatePage />,
       },
       {
         path: ':id',
-        element: <>detail</>,
+        element: <DemoDetailPage />,
       },
       {
         path: ':id/edit',
-        element: <>edit</>,
+        element: <DemoEditPage />,
       },
     ],
   },
