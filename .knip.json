@@ -6,6 +6,7 @@
     "!src/orval/generated/**/*",
     "!src/orval/orval.config.ts",
     "!src/orval/useCustomClient.ts",
+    "!src/orval/formDataMutation.ts",
     "!src/**/*.spec-d.ts"
   ]
 }
