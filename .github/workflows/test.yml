@@ -27,5 +27,5 @@ concurrency:
 jobs:
   call-test:
     # TODO: 書き換える {orgname}/{repogitory_name}/.github/workflows/_test.yml@main
-    uses: style-arts-corp/template-react-vite/.github/workflows/_test.yml@main
+    uses: style-arts-corp/obpr-sato-web/.github/workflows/_test.yml@main
     secrets: inherit
