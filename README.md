@@ -1,12 +1,11 @@
-# Style Arts テンプレート
-
-Vite + React + TypeScript のテンプレートです。
+# 本リポジトリはオンボーディングプログラム用です
+Style Arts の Vite + React + TypeScript のテンプレートを使用しています。
 
 ## はじめに
 
 ### node をインストール
 
-node のバージョンは 20.9.0 です。
+node のバージョンは 20.10.0 です。
 [.node-version](.node-version)で固定しているので、[nodenv](https://github.com/nodenv/nodenv)をインストールの上、node のインストールも行ってください。
 
 ### モジュールをインストール
@@ -18,6 +17,8 @@ pnpm install
 #### pnpm をインストールしていない場合は以下を実行
 
 バージョン8.0以上のインストールをお願いします。(package.jsonでバージョン指定をしています。)
+
+本プロジェクトのpnpmはバージョン9.0です。
 
 ```bash
 npm install -g pnpm
