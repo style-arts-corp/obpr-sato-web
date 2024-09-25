@@ -1,4 +1,9 @@
 # 本リポジトリはオンボーディングプログラム用です
+
+
+
+
+
 Style Arts の Vite + React + TypeScript のテンプレートを使用しています。
 
 ## はじめに
@@ -51,16 +56,11 @@ code owner から 1 つ以上 approve をもらっていれば merge して良�
 ```bash
 pnpm scaffold:fc
 ```
-
 #### Hooks の作成
-
 ```bash
 pnpm scaffold:hooks
 ```
-
 #### Provider の作成
-
 ```bash
 pnpm scaffold:provider
 ```
-
